@@ -1,0 +1,44 @@
+@keyframes gradientMove {
+  from {
+    background-position: 100%;
+  }
+  to {
+    background-position: -100%;
+  }
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: black;
+  position: relative;
+}
+
+h1 {
+  font-size: 3em;
+  background: linear-gradient(90deg, #4A46FF, #FF4DED, #4ADEDE, #4A46FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  animation: gradientMove 2s linear infinite;
+  position: absolute;
+  z-index: 1;
+}
+
+.glow {
+  font-size: 3em;
+  background: linear-gradient(90deg, #4A46FF, #FF4DED, #4ADEDE, #4A46FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  animation: gradientMove 2s linear infinite;
+  filter: blur(10px);
+  opacity: 1;
+  position: absolute;
+  z-index: 0;
+}

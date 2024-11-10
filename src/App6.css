@@ -1,0 +1,97 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  background-color: #000000;
+}
+
+h1 {
+  font-size: 6em;
+  position: absolute;
+  -webkit-text-stroke: 2px black;
+  font-weight: bold;
+}
+
+.text1 {
+  color: #4A46FF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 0.2s;
+  z-index: 4;
+  animation: fadeInScale 3s ease forwards;
+  animation-iteration-count: infinite;
+}
+
+.text2 {
+  color: #4ADEDE;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 0.4s;
+  z-index: 3;
+  animation: fadeInScale2 3s ease forwards;
+  animation-iteration-count: infinite;
+}
+
+.text3 {
+  color: #FF4DED;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 0.6s;
+  z-index: 2;
+  animation: fadeInScale3 3s ease forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeInScale {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  40% {
+    transform: translate(-55%, -60%);
+  }
+  50% {
+    transform: translate(-55%, -60%);
+  }
+  90% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes fadeInScale2 {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  45% {
+    transform: translate(-54%, -56%);
+  }
+  50% {
+    transform: translate(-54%, -56%);
+  }
+  95% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes fadeInScale3 {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-53%, -52%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}

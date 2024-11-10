@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #ffffff;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  position: relative;
+}
+
+.content h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  text-align: center;
+  font-size: 6em;
+  opacity: 0.8;
+}

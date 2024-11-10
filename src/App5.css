@@ -1,0 +1,34 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.svg-text {
+  width: 100%;
+  height: auto;
+  fill: none;
+  stroke: #4A46FF;
+}
+
+#svgGroup {
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 4000;
+  animation: draw 10s ease forwards;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4000;
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+
+.bottom-layer {
+  position: absolute;
+  z-index: -1;
+}

@@ -1,0 +1,48 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5vw;
+  width: 40vw;
+  text-align: left;
+  padding: 2vw;
+  position: absolute;
+  animation: zoom 2s ease-in-out forwards;
+}
+
+.text_animate{
+  clip-path: polygon(0% 0%, 10% 10%, 10% 90%, 10% 90%);;
+  animation: expandClip 2s ease-in-out forwards;
+  color: #4A46FF;
+  background-color: black;
+}
+
+.text_outline{
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 2px #4A46FF;
+}
+
+@keyframes expandClip {
+  0% {
+    clip-path: polygon(0% 0%, 10% 10%, 10% 90%, 10% 90%);
+    transform: scale(0.8);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

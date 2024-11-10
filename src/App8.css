@@ -1,0 +1,37 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.circular-text {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  font-size: 1.6em;
+  line-height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate-circle 10s linear infinite;
+}
+
+.circular-text span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 0;
+  display: inline-block;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotate-circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

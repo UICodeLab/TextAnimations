@@ -1,0 +1,39 @@
+@keyframes blurInCharacter {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(20px);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  display: flex;
+  font-size: 2em;
+}
+
+.blur-in-char {
+  display: inline-block;
+  opacity: 0;
+  animation: blurInCharacter 3s ease forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
